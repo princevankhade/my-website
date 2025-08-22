@@ -3,83 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Vanakhade</title>
+  <title>Prince Vanakhade | About Me</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #8B0000, #87CEFA);
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff6b6b, #4dabf7);
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-    }
-    .card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-      max-width: 400px;
-      padding: 25px;
       text-align: center;
-      animation: fadeIn 1s ease-in-out;
+      padding: 20px;
     }
-    .card img {
+
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 500px;
       width: 100%;
-      max-width: 250px;
-      border-radius: 15px;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
     }
-    .card img:hover {
-      transform: scale(1.05);
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
-    .card h1 {
-      margin: 10px 0;
-      font-size: 28px;
-      color: #333;
+
+    p {
+      font-size: 1.1rem;
+      margin: 5px 0;
     }
-    .card p {
-      font-size: 18px;
-      margin: 6px 0;
-      color: #555;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
     }
-    .highlight {
-      font-weight: bold;
-      color: #ff6600;
-    }
-    .email a {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: white;
-      background: #ff6600;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .email a:hover {
-      background: #e65500;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    a:hover {
+      color: #ffd93d;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="photo.jpg.jpeg" alt="Prince Vanakhade">
+  <div class="container">
     <h1>Prince Vanakhade</h1>
-    <p><span class="highlight">School:</span> Schofields Public School</p>
-    <p><span class="highlight">Age:</span> 11</p>
-    <p><span class="highlight">Height:</span> 137 cm</p>
-    <p><span class="highlight">Date of Birth:</span> 3 October 2014</p>
-    <p><span class="highlight">Nationality:</span> Indian</p>
-    <div class="email">
-      <a href="mailto:princevankhade@gmail.com">📧 Email Me</a>
-    </div>
+    <p><strong>School:</strong> Schofields Public School</p>
+    <p><strong>Age:</strong> 11</p>
+    <p><strong>Height:</strong> 137 cm</p>
+    <p><strong>Date of Birth:</strong> 3 October 2014</p>
+    <p><strong>Nationality:</strong> Indian</p>
+    <p><strong>Email:</strong> <a href="mailto:princevankhade@gmail.com">princevankhade@gmail.com</a></p>
+    <p><strong>Photo:</strong> <a href="https://i.postimg.cc/ydb0XbJM/photo-jpeg.jpg" target="_blank">Click here to view my photo</a></p>
   </div>
 </body>
 </html>
